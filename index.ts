@@ -21,7 +21,7 @@ const colours = [
 ];
 
 export function generateAvatar(name, size = 96, fill="#fff") {
-  let nameTokens = name.split(' '); 0
+  let nameTokens = name.split(' ');
   let initials = nameTokens[0].charAt(0).toUpperCase() + (nameTokens.length > 1 ? nameTokens[1].charAt(0).toUpperCase() : '');
   let index = (initials.charCodeAt(0) - 65) + (isNaN(initials.charCodeAt(1)) ? 0 : initials.charCodeAt(1) - 65);
 
