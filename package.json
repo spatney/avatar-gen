@@ -1,0 +1,11 @@
+{
+  "name": "avatar-gen",
+  "version": "1.0.0",
+  "description": "Creates an avatar image from name",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sachin Patney",
+  "license": "MIT"
+}
