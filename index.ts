@@ -20,7 +20,7 @@ const colours = [
   "#7f8c8d"
 ];
 
-export function generateAvatar(name, size = 96) {
+export function generateAvatar(name, size = 96, fill="#fff") {
   let nameTokens = name.split(' '); 0
   let initials = nameTokens[0].charAt(0).toUpperCase() + (nameTokens.length > 1 ? nameTokens[1].charAt(0).toUpperCase() : '');
   let index = (initials.charCodeAt(0) - 65) + (isNaN(initials.charCodeAt(1)) ? 0 : initials.charCodeAt(1) - 65);
@@ -37,7 +37,7 @@ export function generateAvatar(name, size = 96) {
   context.fillRect(0, 0, canvasWidth, canvasHeight);
   context.font = size / 2 + "px Arial";
   context.textAlign = "center";
-  context.fillStyle = "#FFF";
+  context.fillStyle = fill;
   context.textBaseline = "top";
   context.fillText(initials, canvasWidth / 2, canvasHeight / 4);
 
