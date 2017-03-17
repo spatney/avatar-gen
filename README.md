@@ -1,3 +1,6 @@
+[![Npm Version](https://img.shields.io/npm/v/avatar-gen.svg?style=flat)](https://www.npmjs.com/package/avatar-gen)
+[![Npm Downloads](https://img.shields.io/npm/dm/avatar-gen.svg?style=flat)](https://www.npmjs.com/package/avatar-gen)
+
 ### Avatar Generator
 
 A Typescript library that generates an Avatar from a name string.
