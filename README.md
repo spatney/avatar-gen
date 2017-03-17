@@ -1,3 +1,5 @@
-'''Generate an Avatar from a name string
+### Generate an Avatar from a name string
 
-generateAvatar('Sachin Patney');
+```typescript
+generateAvatar('Sachin Patney'); // returns a image data url
+```
