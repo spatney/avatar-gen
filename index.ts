@@ -20,7 +20,11 @@ const colours = [
   "#7f8c8d"
 ];
 
-export function generateAvatar(name, size = 96, fill="#fff") {
+export function generateAvatar(name: string, size = 96, fill = "#fff") {
+  if (!name || name.length === 0) {
+    name = '-';
+  }
+
   let nameTokens = name.split(' ');
   let initials = nameTokens[0].charAt(0).toUpperCase() + (nameTokens.length > 1 ? nameTokens[1].charAt(0).toUpperCase() : '');
   let index = (initials.charCodeAt(0) - 65) + (isNaN(initials.charCodeAt(1)) ? 0 : initials.charCodeAt(1) - 65);
